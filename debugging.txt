@@ -1,0 +1,88 @@
+
+There are various types of bugs that can occur in coding. Here are some common types with brief explanations:
+
+Syntax Errors: These bugs occur when the code violates the rules of the programming language syntax. It can be a missing semicolon, parentheses mismatch, or incorrect keyword usage. Syntax errors prevent the code from running.
+
+Logic Errors: Logic bugs occur when the code is syntactically correct but produces incorrect results due to flawed logic. 
+These bugs can be challenging to identify because the code runs without any error messages, but the output or behavior is not as expected.
+
+Runtime Errors: These bugs occur during the execution of the code. 
+They can be caused by various factors such as dividing by zero, accessing an invalid memory location, or calling a function with incorrect arguments. 
+Runtime errors often result in program crashes or exceptions.
+
+Semantic Errors: Semantic bugs involve issues where the code is syntactically correct and runs without errors, but it doesn't accomplish the intended task. 
+These bugs are more subtle and can be caused by incorrect variable usage, wrong algorithm implementation, or incorrect assumptions about data.
+
+Off-by-One Errors: This type of bug is a specific category of logic errors. It commonly occurs when iterating over a sequence or an array and results in accessing one element beyond or before the intended range. 
+Off-by-one errors can cause unexpected behavior, such as missing or duplicate elements.
+
+Null Pointer Dereference: This bug occurs when a program attempts to access or manipulate a memory location that contains a null or uninitialized pointer. 
+It often leads to crashes or unexpected program behavior.
+
+Concurrency Bugs: These bugs arise in multi-threaded or concurrent programs. They occur when multiple threads access shared resources simultaneously and result in issues like race conditions, deadlocks, or data corruption.
+
+Integration Bugs: Integration bugs occur when multiple components or modules of a system don't work correctly together. 
+It can be due to incompatible interfaces, incorrect data exchange, or miscommunication between different parts of the system.
+
+Input Validation Bugs: These bugs occur when input data is not properly validated, leading to unexpected behavior or security vulnerabilities. 
+For example, failing to check user input for length or format can result in buffer overflows or code injection attacks.
+
+Documentation and Comments Bugs: While not directly affecting the code's functionality, bugs in documentation or comments can lead to misunderstandings, confusion, or incorrect usage of code. 
+These bugs can impact code maintenance and collaboration
+
+DEBUGGING PRINCIPLES
+THE DEUGIING CYCLE
+ 1. Code
+ 2. Test
+ 3. Repeat
+
+THE BUG SEEKING CYCLE
+ The diference btn debugging and testing
+ -Debugging is what can i do to fix erronous code while while testing os what i need to do to break code
+
+STEPS OF DEUGIING
+ 1. Plan your attack
+ 2. Backup your file(using version control/github)
+ 3. Isolate the block of code that could be having the error
+ 4. Finding the actual line of code  with error
+ 5. Fix the error dont patch Isolate
+ 6. test the fix
+ 7. look for simillar bugs
+
+OTHER STEPS AND STRATEGIES
+Reproductibility
+ - The first step is to be able to reproduce the bugs
+ understand cause and the effect beforeyou change the code
+
+ Reduction
+ - Finding the simplest test that exibits the bug ie. reduce the such space because bugs are not random
+ but come from somewhere within code
+
+ Deduction
+- Understand what the program is doing, since you cannot be able to know there is a bug if you don not know what the code
+code is actually supposed to be doing
+
+Patr Programming
+ - someone els maybe able to see the wrong assumptions or mistakes you may have made
+
+Leaveraging experrience from the others
+- seeking aolution from other experrience people
+
+Preventive measue to avoid bugs
+1. Write clean and easy to read code ie. writing dry code( don not repeat your self)
+2  Make one change at a time
+3  Test your code:
+     ->The unit test
+          Test functional blocks of your code
+     ->The intergration test
+          Test the interactions btn the functional blocks of your code
+     ->Test with valid and invalid data
+4  Defensive programming by adding error checking code and throwing execptions
+5  Brain storming
+
+DEBUGGING TOOLS
+1. Break point
+   This helps you to see which part of the code si carrying the bug.
+
+Assignment.
+Research and use a debugging tool of choice.
