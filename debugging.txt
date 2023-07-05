@@ -31,6 +31,9 @@ Documentation and Comments Bugs: While not directly affecting the code's functio
 These bugs can impact code maintenance and collaboration
 
 DEBUGGING PRINCIPLES
+ -Reproducibility:
+ -Isolation
+ -Simplification
 THE DEUGIING CYCLE
  1. Code
  2. Test
